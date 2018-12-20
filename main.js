@@ -104,9 +104,8 @@ function createMovieLayout(movie) {
 
 
 function createMovieInfo(id,obj){
-    console.log(obj)
+//    console.log(obj)
      let h4 = document.getElementById(id);
-    console.log(h4)
     h4.innerHTML = id+": " + obj[id];
 }
 
@@ -118,12 +117,12 @@ function removeDataMovie() {
 function sessionStorageLogin() {
     let username = document.getElementById("userName");
     let password = document.getElementById("psw");
-    console.log(username);
+//    console.log(username);
     sessionStorage.setItem('Username', username.value);
     sessionStorage.setItem('Password', password.value);
     let sessionUsername = sessionStorage.getItem('Username');
 
-    console.log(sessionUsername);
+//    console.log(sessionUsername);
     let sessionPassword = sessionStorage.getItem('Password');
     document.getElementById('id01').style.display = 'none';
     let divTitle = document.getElementById("welcome");
